@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import ComingSoon from './ComingSoon';
 import Header from './Header';
 import SearchResults from './SearchResults';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <Route exact path='/coming-soon'>
         <ComingSoon />
       </Route>
+
+      <Footer />
     </div>
   );
 }

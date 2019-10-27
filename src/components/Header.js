@@ -5,7 +5,9 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <NavLink to='/'>HOME</NavLink>
+        <NavLink to='/'>
+          <img src='https://emeraldstay.com/assets/svg/icon-logo-sm.svg' alt='Home' height='55' />
+        </NavLink>
         <div className='company-nav'>
           <NavLink to='/coming-soon'>OUR PHILOSOPHY</NavLink>
           <NavLink to='/coming-soon'>DESTINATIONS</NavLink>
