@@ -16,13 +16,18 @@ class SearchResults extends React.Component {
   }
 
   render() {
-    return <div>{this.props.listings.map((listing) => <Listing listing={listing} key={listing.id} />)}</div>;
+    if (this.props.loading) {
+      return <div>Loading...</div>;
+    } else {
+      return <div>{this.props.listings.map((listing) => <Listing listing={listing} key={listing.id} />)}</div>;
+    }
   }
 }
 
 function mapStateToProps(state) {
   return {
-    listings: state.listings
+    listings: state.listings,
+    loading: state.loading
   };
 }
 
