@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 
+//Styled Components
+import { FooterContainer, StyledFooter, FooterNav, NewsletterForm, Socials, Copyright } from './styles/footer';
+
 // TODO - Add anchor tags and arial labels
 
 class Footer extends Component {
   render() {
     return (
-      <div className='footer-container'>
-        <footer>
-          <nav>
+      <FooterContainer>
+        <StyledFooter>
+          <FooterNav>
             <h4>DESTINATIONS</h4>
             <ul>
               <li>MORZINE-LES GETS</li>
@@ -15,8 +18,8 @@ class Footer extends Component {
               <li>MARRAKECH</li>
               <li>MARRAKECH - ATLAS</li>
             </ul>
-          </nav>
-          <nav>
+          </FooterNav>
+          <FooterNav>
             <h4>TRUE EXPERIENCE</h4>
             <ul>
               <li>OUR PHILOSOPHY</li>
@@ -25,8 +28,8 @@ class Footer extends Component {
               <li>TELL YOUR EXPERIENCE</li>
               <li>E-LIFEMAG</li>
             </ul>
-          </nav>
-          <nav>
+          </FooterNav>
+          <FooterNav>
             <h4>TRUE PROFESSIONALS</h4>
             <ul>
               <li>OUR TEAM</li>
@@ -34,8 +37,9 @@ class Footer extends Component {
               <li>PRESS</li>
               <li>LEASE TO EMERALD</li>
             </ul>
-          </nav>
-          <nav>
+          </FooterNav>
+          <FooterNav>
+            <h4 style={{ height: '25px' }}> </h4>
             <ul>
               <li>FAQ</li>
               <li>PRIVACY POLICY</li>
@@ -43,21 +47,23 @@ class Footer extends Component {
               <li>LOGIN</li>
               <li>CONTACT US</li>
             </ul>
-          </nav>
-        </footer>
-        <form>
-          <label>STAY IN TOUCH</label>
-          <input type='email' placeholder='EMAIL' />
+          </FooterNav>
+        </StyledFooter>
+        <NewsletterForm>
+          <div className='email'>
+            <label for='email'>STAY IN TOUCH</label>
+            <input type='email' placeholder='EMAIL' />
+          </div>
           <input type='submit' value='SEND' />
-        </form>
-        <div className='socials'>
+        </NewsletterForm>
+        <Socials>
           <img src={require('../assets/icon-socials-fb.svg')} alt='facebook link' height='40' />
           <img src={require('../assets/icon-socials-twitter.svg')} alt='twitter link' height='40' />
           <img src={require('../assets/icon-socials-ig.svg')} alt='instagram link' height='40' />
           <img src={require('../assets/icon-socials-linkedin.svg')} alt='linkedin link' height='40' />
-        </div>
-        <div className='copyright'>MADE WITH &#10084;</div>
-      </div>
+        </Socials>
+        <Copyright>MADE WITH &#10084;</Copyright>
+      </FooterContainer>
     );
   }
 }
