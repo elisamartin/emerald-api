@@ -2,9 +2,13 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const HeaderContainer = styled.div`
+  margin: -8px;
   display: flex;
   flex-direction: column;
   background: white url('https://bit.ly/2JoPfVs') no-repeat fixed center;
+  img {
+    padding: 8px;
+  }
 `;
 
 export const Selectors = styled.div`
@@ -88,7 +92,7 @@ export const HamburguerMenu = styled.div`
   input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: white;
   }
   input:checked ~ span:nth-last-child(3) {
     opacity: 0;
@@ -97,12 +101,14 @@ export const HamburguerMenu = styled.div`
   input:checked ~ span:nth-last-child(2) {
     opacity: 1;
     transform: rotate(-45deg) translate(0, -1px);
+    background: white;
   }
   .hamburguer-menu-inner {
-    background: black;
     display: none;
+    background: black;
     position: absolute;
     width: 300px;
+    height: 100vh;
     margin: -100px 0 0 0;
     padding: 50px;
     padding-top: 125px;
@@ -110,6 +116,11 @@ export const HamburguerMenu = styled.div`
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    font-family: 'Anton', sans-serif;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
   }
   input:checked ~ .hamburguer-menu-inner {
     display: block;
@@ -124,6 +135,7 @@ export const HeaderLink = styled(NavLink)`
 `;
 
 export const CompanyNav = styled.div`
+  height: 50%;
   display: flex;
   flex-direction: column;
 `;
