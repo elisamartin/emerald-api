@@ -5,7 +5,7 @@ export const HeaderContainer = styled.div`
   margin: -8px;
   display: flex;
   flex-direction: column;
-  background: white url('https://bit.ly/2JoPfVs') no-repeat fixed center;
+  background: white url('https://bit.ly/2PqeACg') no-repeat fixed center;
   img {
     padding: 8px;
   }

@@ -5,6 +5,9 @@ import Listing from './Listing';
 import { withRouter } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 
+// Styled Components
+import { SearchResultsContainer } from './styles/searchResults';
+
 class SearchResults extends React.Component {
   constructor(props) {
     super(props);
@@ -19,7 +22,11 @@ class SearchResults extends React.Component {
     if (this.props.loading) {
       return <div>Loading...</div>;
     } else {
-      return <div>{this.props.listings.map((listing) => <Listing listing={listing} key={listing.id} />)}</div>;
+      return (
+        <SearchResultsContainer>
+          {this.props.listings.map((listing) => <Listing listing={listing} key={listing.id} />)}
+        </SearchResultsContainer>
+      );
     }
   }
 }
