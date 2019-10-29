@@ -5,6 +5,17 @@ import { NavLink } from 'react-router-dom';
 import { HeaderContainer, HamburguerMenu, HeaderLink, CompanyNav, UserNav, Selectors, Filters } from './styles/header';
 
 class Header extends Component {
+  /* toggleHamburguerMEnu -> Toggles menu contains to appear/disapear */
+  toggleHamburguerMenu() {
+    let innerHamburguer = document.getElementById('hamburguer-menu-inner');
+    if (innerHamburguer.style.display === 'flex') {
+      innerHamburguer.style.display = 'none';
+      console.log('inner add none');
+    } else {
+      innerHamburguer.style.display = 'flex';
+      innerHamburguer.style.right = '375px';
+    }
+  }
   render() {
     return (
       <HeaderContainer>
@@ -13,13 +24,11 @@ class Header extends Component {
             <img src='https://emeraldstay.com/assets/svg/icon-logo-sm.svg' alt='Home' height='55' />
           </NavLink>
           <HamburguerMenu>
-            <input type='checkbox' />
-
+            <input type='checkbox' onClick={this.toggleHamburguerMenu} />
             <span />
             <span />
             <span />
-
-            <div className='hamburguer-menu-inner'>
+            <div id='hamburguer-menu-inner' className='hamburguer-menu-inner'>
               <CompanyNav>
                 <HeaderLink to='/coming-soon'>OUR PHILOSOPHY</HeaderLink>
                 <HeaderLink to='/coming-soon'>DESTINATIONS</HeaderLink>

@@ -103,7 +103,7 @@ export const HamburguerMenu = styled.div`
     transform: rotate(-45deg) translate(0, -1px);
     background: white;
   }
-  .hamburguer-menu-inner {
+  #hamburguer-menu-inner {
     display: none;
     background: black;
     position: absolute;
@@ -118,14 +118,8 @@ export const HamburguerMenu = styled.div`
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
     font-family: 'Anton', sans-serif;
     font-size: 2em;
-    display: flex;
     justify-content: space-between;
     text-align: right;
-  }
-  input:checked ~ .hamburguer-menu-inner {
-    display: block;
-    transform: scale(1.0, 1.0);
-    opacity: 1;
   }
 `;
 

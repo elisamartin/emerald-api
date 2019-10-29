@@ -18,17 +18,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - [Styled Components 💅](https://www.styled-components.com/)
 
+- [react-testing-library](https://github.com/testing-library/react-testing-library) 🐐
+
 - [Jest](https://jestjs.io/)
 
 To run the project, you can run this scripts:
 
-`yarn` or `npm install`  to install dependencies
+**`yarn`** or **`npm install`**  to install dependencies
 
-`yarn start` or `npm start` Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000/) to view it in the browser. The page will reload if you make edits. You will also see any lint errors in the console.
+**`yarn start`** or **`npm start`** Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000/) to view it in the browser. The page will reload if you make edits. You will also see any lint errors in the console.
 
-`yarn test` or `npm test` Launches the test runner in the interactive watch mode.
+**`yarn test`** or **`npm test`** Launches the test runner in the interactive watch mode.
 
-`yarn build` or `npm build` Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
+**`yarn build`** or **`npm build`** Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ### **Structure**
 
@@ -54,5 +56,4 @@ To run the project, you can run this scripts:
     			Listing.js
     			Footer.js
     			/styles
-    
     			/test
