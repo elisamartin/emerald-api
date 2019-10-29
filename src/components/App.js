@@ -6,10 +6,14 @@ import Header from './Header';
 import SearchResults from './SearchResults';
 import Footer from './Footer';
 
+// Styled Components
+import { AppContainer } from './styles/index';
+
 function App() {
   return (
-    <div className='App'>
+    <AppContainer>
       <Header />
+
       <Route exact path='/'>
         <SearchResults />
       </Route>
@@ -19,7 +23,7 @@ function App() {
       </Route>
 
       <Footer />
-    </div>
+    </AppContainer>
   );
 }
 
