@@ -51,7 +51,7 @@ class Footer extends Component {
         </StyledFooter>
         <NewsletterForm>
           <div className='email'>
-            <label for='email'>STAY IN TOUCH</label>
+            <label htmlFor='email'>STAY IN TOUCH</label>
             <input type='email' placeholder='EMAIL' />
           </div>
           <input type='submit' value='SEND' />
