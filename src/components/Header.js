@@ -44,7 +44,7 @@ class Header extends Component {
         </nav>
         <Selectors>
           <select name='country'>
-            <option value='' selected disabled hidden>
+            <option value='' defaultValue disabled hidden>
               COUNTRY
             </option>
             <option value='1'>FRANCE</option>
