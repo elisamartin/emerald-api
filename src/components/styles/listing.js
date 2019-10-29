@@ -6,7 +6,7 @@ export const ListingContainer = styled.div`
   align-items: center;
   padding-bottom: 15px;
   @media screen and (min-width: 769px) {
-    max-width: 49%;
+    max-width: 50%;
   }
   img {
     width: 100%;
